@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="rian.pratama.tipscalculator.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tagihan"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        />
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/Tagihan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="%"
+        android:id="@+id/textView4"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Persen Tips"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Jumlah Orang"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_gravity="right" />
+
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_below="@id/input3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:onClick="hitung"/>
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@id/btn_calc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
